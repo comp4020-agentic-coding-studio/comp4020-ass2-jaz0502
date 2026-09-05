@@ -7,11 +7,10 @@ affiliation: Slop University School of Invented Disciplines
 role: tutor
 email: idris.fenn@slop.university
 contact: Ask during sessions, or email when a question cannot wait until the next one.
-photo: ./idris-fenn.avif
-photoAlt: A stylised portrait of a person facing the viewer, flat gold and black shapes on warm cream, in a two-ink risograph print
 ---
 
-<!-- STARTER_CONTENT: replace this person entry, then remove this comment. -->
-
-Replace this entry. A second person makes the listing, role ordering and
-teacher-reference fields visible before you replace the cast with your own.
+Idris runs all twelve weekly sessions: the fieldwork, the teardown
+workshops, and the studios where assessment work gets stress-tested
+before it's due. Comes to the course from a background in service
+design, mostly for organisations that would rather the machine took
+the blame.

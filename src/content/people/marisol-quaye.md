@@ -7,15 +7,13 @@ affiliation: Slop University School of Invented Disciplines
 role: convenor
 email: marisol.quaye@slop.university
 contact: Email for course-level questions; use the weekly session for feedback on work.
-photo: ./marisol-quaye.avif
-photoAlt: A stylised portrait of a person in three-quarter view, flat gold and black shapes on warm cream, in a two-ink risograph print
 ---
 
-<!-- STARTER_CONTENT: replace this person entry, then remove this comment. -->
+Marisol spent eleven years auditing self-service kiosks for a transit
+authority before she got tired of writing reports nobody outside the
+compliance office ever read, and started teaching the argument instead.
+She delivers all twelve lectures and sets the incentive question each
+one has to answer.
 
-Replace this entry. A people page carries a short bio and whatever a student
-needs in order to contact the right person for the right thing --- and nothing
-that will be stale by week 3.
-
-Consultation hours, contact preferences and the escalation path (who to ask
-first, who to ask when that does not work) are the parts students actually read.
+Consultation hours are posted on the sessions page. Email for anything
+that can wait until next week; bring anything that can't to the studio.
