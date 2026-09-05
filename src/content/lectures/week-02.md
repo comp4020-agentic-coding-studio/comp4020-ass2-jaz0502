@@ -1,23 +1,22 @@
 ---
-title: Second lecture
+title: Coins, Codes, and the Myth of Simplicity
 description:
-  Week 2 — the first substantive material, and the run-up to the first review
+  The vending machine as the simplest possible one-shot interface, and what
+  its "simplicity" is quietly doing
 week: 2
 date: 2027-03-01
 teachers:
-  - idris-fenn
+  - marisol-quaye
+tags:
+  - incentive
 related:
-  - sessions/02-first-review
-  - assessments/assignment-1
+  - sessions/week-02
 ---
-
-<!-- STARTER_CONTENT: replace this lecture, then remove this comment. -->
-
-Replace this page. It exists so the lectures listing sorts by week and the
-related block has more than one edge to draw.
 
 ## Outline
 
-- the first substantive material, and where it shows up in practice
-- what the first review is looking for
-- reading before next week
+- why "simple" is a design claim, not a fact: a vending machine's single
+  slot and short menu hide slotting fees, price stickers set per location,
+  and error states with no recovery path
+- simplicity as a way to make a transaction feel too small to complain about
+- reading a price sticker as evidence, not decoration

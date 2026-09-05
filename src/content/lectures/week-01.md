@@ -1,30 +1,26 @@
 ---
-title: Opening lecture
+title: The One-Shot Interface, A Definition
 description:
-  The first lecture — what the course is, why it is shaped this way, and what
-  happens in week 1
+  What this course studies and why — the shape shared by parking meters,
+  kiosks and ATMs, and the question generic usability heuristics don't ask
 week: 1
 date: 2027-02-22
 teachers:
   - marisol-quaye
 slides: /decks/week-01/
+tags:
+  - incentive
 related:
-  - sessions/01-getting-started
+  - sessions/week-01
 ---
-
-<!-- STARTER_CONTENT: replace this lecture, then remove this comment. -->
-
-Replace this page. A lecture entry says what was covered and links to the pages
-that own the detail, so the lecture stays short and nothing is explained twice.
-
-The `related:` ref above is a graph edge: it renders on this page and on the
-session's, so declare a connection once, on whichever side is convenient.
-
-The page renders its `slides:` link automatically. Decks are markdown too,
-under `src/decks/`; the path is part of the lecture's API metadata.
 
 ## Outline
 
-- what the course is for
-- how the weeks are shaped
-- what to do before the first session
+- three interfaces, one shape: one-shot, captive, run by a stranger to the
+  organisation that profits
+- why this is a narrower claim than "bad interfaces exist" — most usability
+  writing treats friction as an accident; this course treats it as a design
+  decision with a beneficiary
+- the question every week returns to: who benefits when this fails?
+- what to bring to Assignment 1: a single transaction, described before it's
+  diagnosed
