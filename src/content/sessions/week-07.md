@@ -13,6 +13,8 @@ spec:
   - you present a claim from your incentive map and the evidence for it
   - you name the one counter-argument most likely to undercut your claim
   - you challenge at least one other student's claim with a specific counter-argument
+related:
+  - assessments/assignment-2
 ---
 
 ## Before the session

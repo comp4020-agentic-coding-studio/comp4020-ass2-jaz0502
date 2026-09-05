@@ -1,46 +1,40 @@
 ---
-title: Assignment 1
+title: "Field Audit: One Machine, One Transaction"
 description:
-  The first piece of graded work — a placeholder brief showing the shape every
-  assessment page follows
-week: 6
-due: 2027-04-12T12:00:00+10:00
-weight: 40
+  A first-person walkthrough of one specific machine and one specific
+  transaction, diagnosed against the course's opening concepts
+week: 4
+due: 2027-03-19T12:00:00+11:00
+weight: 20
 marking:
   mode: weighted
   criteria:
-    - name: Response to the brief
+    - name: Fidelity of walkthrough
       weight: 60
-    - name: Quality of execution
+    - name: Diagnostic use of concepts
       weight: 40
 spec:
-  - submitted by the deadline, in the format named below
-  - it does the thing the brief asks for, and a reader can tell that it does
-  - the work is yours, with any assistance declared
+  - you name one specific machine and one specific transaction on it
+  - the walkthrough describes what happened, step by step, before diagnosing it
+  - the diagnosis uses at least one concept from weeks 1-3 by name
 related:
-  - final-project
+  - sessions/week-04
 ---
-
-<!-- STARTER_CONTENT: replace this assessment brief, then remove this comment. -->
-
-Replace this brief. An assessment page has three jobs: pose the problem, say
-what is submitted, and say how it is marked.
 
 ## The brief
 
-> One sentence stating the problem, set as a blockquote so it reads as the thing
-> being asked rather than as commentary on it.
+> Walk one stranger through one machine, in the order it actually happened, then
+> diagnose the moment it stopped being obvious.
 
-Then a paragraph or two on what makes a strong response --- the room the brief
-leaves, and the judgement it is testing. Keep the provocation and the mechanics
-apart: a student should be able to read the first and know what to make, and
-read the second and know what to hand in.
+Pick a single transaction on a single machine — not a category of machine, one
+you can name and, ideally, one you can go and use again while you write this.
+The walkthrough comes first and stays purely descriptive: what the machine
+displayed, what you pressed, where you paused. Diagnosis comes after, and has
+to reach for a specific concept from the first three weeks rather than a
+general complaint about bad design.
 
 ## What you submit
 
-Name the artefact and the format. If evidence of process is part of the
-submission, say which files and what each is for.
-
-The optional `marking:` block renders a criterion table (weighted) or a marking
-statement (holistic) below; leave it out and say how the work is marked in
-prose.
+A written walkthrough (roughly 800–1200 words) plus at least one photo of the
+machine's interface at the point you hesitated. Name the concept you're
+applying and where in the walkthrough it explains what you saw.
