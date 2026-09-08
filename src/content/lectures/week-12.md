@@ -13,6 +13,11 @@ related:
   - sessions/week-12
 ---
 
+Week 1 asked you to notice the exact moment you weren't sure what to do
+next, at a parking meter. Eleven machines later the question hasn't
+changed — only how confidently, and with what evidence, you can now answer
+it.
+
 ## Outline
 
 - twelve machines, one recurring question: who benefits when the design is

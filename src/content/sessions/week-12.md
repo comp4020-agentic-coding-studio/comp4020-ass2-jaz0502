@@ -24,9 +24,11 @@ incentive you deliberately chose not to design away.
 
 ## In the session
 
-Each student states their redesign's weakest defence out loud before the
-room tests it. A redesign that removes every incentive, including the
-legitimate ones, hasn't actually engaged with the semester's argument.
+Same courtroom shape as week 7's studio: five minutes to state the
+redesign and its weakest defence, then two minutes of questions aimed
+specifically at that defence, not at the whole project. A redesign that
+removes every incentive, including the legitimate ones, hasn't actually
+engaged with the semester's argument.
 
 ## Afterwards
 

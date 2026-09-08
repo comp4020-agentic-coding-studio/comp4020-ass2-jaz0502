@@ -22,9 +22,11 @@ the single decision point in it you're least confident about.
 
 ## In the session
 
-Short showings, then feedback aimed at that one point rather than general
-polish. The brief is due this week, so this is the last structured
-opportunity to catch a walkthrough that's drifted into diagnosis too early.
+Showings run in pairs: two minutes to walk your partner through the
+transaction as it happened, three minutes of feedback aimed only at the
+decision point you named — not general polish. The brief is due this week,
+so this is the last structured opportunity to catch a walkthrough that's
+drifted into diagnosis too early.
 
 ## Afterwards
 

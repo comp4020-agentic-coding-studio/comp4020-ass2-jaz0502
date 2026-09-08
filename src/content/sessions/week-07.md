@@ -24,9 +24,10 @@ evidence you have for it — even if the write-up isn't finished.
 
 ## In the session
 
-We run this as a courtroom rather than a critique: each claim has to survive
-a specific counter-argument from someone else in the room, not just general
-encouragement.
+We run this as a courtroom rather than a critique: three minutes to state
+the claim and its evidence, then two minutes of cross-examination from one
+classmate before the room weighs in. Each claim has to survive a specific
+counter-argument, not just general encouragement.
 
 ## Afterwards
 
