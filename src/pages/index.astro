@@ -2,6 +2,7 @@
 import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import { withBase } from "astro-theme-university/url";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
 ---
@@ -24,6 +25,24 @@ import { sessionLabels, siteConfig } from "../site-config";
     machines, build an evidenced incentive map, and finish the semester by
     tearing down and redesigning one, with a memo naming who'd resist the
     change.
+  </p>
+
+  <h2>How this course runs</h2>
+  <p>
+    Each week pairs a lecture with a session, both built around one machine.
+    The lecture — delivered every week by Marisol Quaye — introduces that
+    week's machine and names the incentive behind its worst behaviour. The
+    session, run every week by Idris Fenn, is where the fieldwork and
+    teardown work actually happens: you go find the machine, use it, and
+    bring back what you saw.
+  </p>
+  <p>
+    Two assignments interrupt that rhythm to turn it into graded work — a
+    field audit in week 4, an incentive case study in week 7 — and the
+    course ends in week 12 with a full teardown and redesign of one machine
+    from the semester. See the <a href={withBase("/sessions/")}>sessions page</a> for
+    the week-by-week schedule and the <a href={withBase("/assessments/")}>assessment page</a> for
+    what each piece of work is worth.
   </p>
 
   <h2>Who it is for</h2>
