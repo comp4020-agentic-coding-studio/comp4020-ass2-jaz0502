@@ -70,20 +70,37 @@
   border-radius: var(--at-border-radius);
   box-shadow: var(--at-shadow-sm);
   padding: var(--at-spacing-lg);
-  margin-block-start: var(--at-spacing-xl);
+  margin-block: var(--at-spacing-xl);
+}
+
+/* Punched-hole perforation, straddling the top/bottom edge: each hole is
+   filled with the page background so it reads as a real cutout rather than
+   a printed pattern, with a thin ring so it still shows up when the paper
+   and page tones are close in value. */
+.receipt::before,
+.receipt::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  height: 16px;
+  background-image: radial-gradient(
+    circle,
+    var(--at-bg) 6px,
+    var(--at-border) 6px 7px,
+    transparent 7px
+  );
+  background-size: 24px 16px;
+  background-position: 6px center;
+  background-repeat: repeat-x;
+  pointer-events: none;
 }
 
 .receipt::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  inset-inline: var(--at-spacing-lg);
-  height: 1px;
-  background-image: repeating-linear-gradient(
-    to right,
-    var(--at-border) 0 6px,
-    transparent 6px 12px
-  );
+  top: -8px;
+}
+
+.receipt::after {
+  bottom: -8px;
 }
 
 .receipt-kicker {

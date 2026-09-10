@@ -6,6 +6,7 @@ import SpecList from "astro-course-university/components/SpecList.astro";
 import Callout from "astro-theme-university/components/Callout.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import MarkingModel from "../../components/MarkingModel.astro";
+import Receipt from "../../components/Receipt.astro";
 import { formatCourseDate } from "../../lib/dates";
 import { graphCollections, siteConfig } from "../../site-config";
 
@@ -35,13 +36,21 @@ const { Content } = await render(assessment);
       </Callout>
     )
   }
-  <p><strong>Due:</strong> {formatCourseDate(assessment.data.due)} · <strong>Weight:</strong> {assessment.data.weight}%</p>
+  <p class="ledger">
+    <strong>Due:</strong> {formatCourseDate(assessment.data.due)} · <strong>Weight:</strong> {assessment.data.weight}%
+  </p>
   <Content />
-  <SpecList spec={assessment.data.spec}>
-    The brief poses the problem and leaves room for a response. The spec is the
-    fixed part: what a marker checks. Some lines can be checked mechanically;
-    the rest call for judgement.
-  </SpecList>
-  {assessment.data.marking && <MarkingModel marking={assessment.data.marking} />}
+  <Receipt>
+    <SpecList spec={assessment.data.spec}>
+      The brief poses the problem and leaves room for a response. The spec is the
+      fixed part: what a marker checks. Some lines can be checked mechanically;
+      the rest call for judgement.
+    </SpecList>
+  </Receipt>
+  {assessment.data.marking && (
+    <Receipt>
+      <MarkingModel marking={assessment.data.marking} />
+    </Receipt>
+  )}
   <RelatedContent entry={assessment} collections={graphCollections} />
 </ContentLayout>
