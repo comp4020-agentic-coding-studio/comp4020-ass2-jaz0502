@@ -1,0 +1,16 @@
+---
+interface Props {
+  tags?: string[];
+}
+
+const { tags = [] } = Astro.props;
+const flagged = tags.includes("incentive");
+---
+
+{
+  flagged && (
+    <span class="incentive-badge" title="Who benefits when the design is bad?">
+      incentive
+    </span>
+  )
+}

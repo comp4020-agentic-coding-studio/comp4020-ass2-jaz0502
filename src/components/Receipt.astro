@@ -1,0 +1,12 @@
+---
+interface Props {
+  kicker?: string;
+}
+
+const { kicker = "Who benefits when the design is bad?" } = Astro.props;
+---
+
+<div class="receipt">
+  <p class="receipt-kicker">{kicker}</p>
+  <slot />
+</div>

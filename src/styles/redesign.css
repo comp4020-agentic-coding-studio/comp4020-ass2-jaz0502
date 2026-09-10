@@ -1,0 +1,104 @@
+/*
+ * Site-specific redesign layer, loaded after the theme's own layered CSS
+ * (see astro.config.ts's `brandCss`). Everything here is intentionally
+ * unlayered so it always wins over `astro-theme-university`'s
+ * `@layer at.tokens/at.base/at.components` without needing !important.
+ *
+ * Concept: the site presents itself as one of the machines the course
+ * studies. Content splits into an "interface" register (titles, hero text —
+ * left exactly as the theme renders them) and a "ledger" register (card
+ * metadata, evidence) that is a genuine, consistent step down in visual
+ * weight, plus a "receipt" block for content that is literally evidence
+ * (spec criteria, marking breakdowns, the late-work penalty schedule).
+ */
+
+:root {
+  --paper-bg: light-dark(
+    color-mix(in oklch, var(--at-bg-alt), var(--at-tertiary) 6%),
+    color-mix(in oklch, var(--at-bg-alt), var(--at-tertiary) 12%)
+  );
+  --ledger-font: var(--at-font-mono);
+}
+
+/* Ledger register: metadata and evidence, not prose. */
+.ledger {
+  font-family: var(--ledger-font);
+  font-size: var(--at-font-size-xs);
+  letter-spacing: 0.02em;
+  color: var(--at-text-secondary);
+}
+
+/* Ticket-stub week number: a restrained nod to the ticket machines and
+   parking meters the course studies, not a decorative LCD theme. */
+.week-stub {
+  font-family: var(--ledger-font);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.03em;
+}
+
+.week-stub::before {
+  content: "[ ";
+}
+
+.week-stub::after {
+  content: " ]";
+}
+
+/* Incentive marker: makes the `incentive` tag (already load-bearing for
+   CLAUDE.md's rules) visible for the first time, as a stamped, filed-away
+   evidence tab rather than a colour-only dot. */
+.incentive-badge {
+  display: inline-block;
+  font-family: var(--ledger-font);
+  font-size: var(--at-font-size-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--at-text-secondary);
+  background: var(--at-accent-soft);
+  border: 1px solid var(--at-border);
+  border-radius: var(--at-border-radius);
+  padding: 0.05em 0.5em;
+  rotate: -2deg;
+}
+
+/* Receipt block: the reusable wrapper for genuinely evidentiary content
+   (spec criteria, marking breakdowns, the late-work penalty schedule). */
+.receipt {
+  position: relative;
+  background: var(--paper-bg);
+  border: 1px solid var(--at-border);
+  border-radius: var(--at-border-radius);
+  box-shadow: var(--at-shadow-sm);
+  padding: var(--at-spacing-lg);
+  margin-block-start: var(--at-spacing-xl);
+}
+
+.receipt::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  inset-inline: var(--at-spacing-lg);
+  height: 1px;
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--at-border) 0 6px,
+    transparent 6px 12px
+  );
+}
+
+.receipt-kicker {
+  margin-block: 0 var(--at-spacing-md);
+  font-family: var(--ledger-font);
+  font-size: var(--at-font-size-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--at-text-secondary);
+}
+
+@media print {
+  .receipt {
+    box-shadow: none;
+    background: none;
+  }
+}
