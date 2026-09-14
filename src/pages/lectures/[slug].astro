@@ -2,6 +2,7 @@
 import { render } from "astro:content";
 import { getPublishedCollection } from "astro-course-university/content";
 import RelatedContent from "astro-course-university/components/RelatedContent.astro";
+import Icon from "astro-theme-university/components/Icon.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import { withBase } from "astro-theme-university/url";
 import IncentiveBadge from "../../components/IncentiveBadge.astro";
@@ -23,8 +24,60 @@ const title = `Week ${lecture.data.week}: ${lecture.data.title}`;
   <p class="ledger">
     <strong>{formatCourseDate(lecture.data.date)}</strong> <IncentiveBadge tags={lecture.data.tags} />
   </p>
-  {lecture.data.slides && <p><a href={withBase(lecture.data.slides)}>Open the slides</a></p>}
+  {
+    lecture.data.slides && (
+      <a class="slides-preview" href={withBase(lecture.data.slides)}>
+        <span class="slides-preview-thumb" aria-hidden="true">
+          <Icon name="presentation" size="1.75rem" />
+        </span>
+        <span class="slides-preview-text">
+          <strong>Open the slides</strong>
+          <span class="ledger">Reveal.js deck, this week's lecture</span>
+        </span>
+      </a>
+    )
+  }
   <Content />
   <TeachingTeam teachers={lecture.data.teachers} />
   <RelatedContent entry={lecture} collections={graphCollections} />
 </ContentLayout>
+
+<style>
+  .slides-preview {
+    display: flex;
+    align-items: center;
+    gap: var(--at-spacing-md);
+    width: fit-content;
+    margin-block: var(--at-spacing-md) var(--at-spacing-lg);
+    padding: var(--at-spacing-sm) var(--at-spacing-lg) var(--at-spacing-sm) var(--at-spacing-sm);
+    border: 1px solid var(--at-border);
+    border-radius: var(--at-border-radius);
+    background: var(--paper-bg);
+    box-shadow: var(--at-shadow-sm);
+    color: var(--at-text);
+    text-decoration: none;
+    transition: box-shadow 0.15s ease;
+  }
+
+  .slides-preview:hover,
+  .slides-preview:focus-visible {
+    box-shadow: var(--at-shadow-md);
+  }
+
+  .slides-preview-thumb {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 4 / 3;
+    height: 3.5rem;
+    border: 1px solid var(--at-border);
+    border-radius: calc(var(--at-border-radius) / 2);
+    background: var(--at-bg-alt);
+    color: var(--at-text-secondary);
+  }
+
+  .slides-preview-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+</style>
