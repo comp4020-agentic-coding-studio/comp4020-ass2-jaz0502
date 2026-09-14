@@ -1,0 +1,118 @@
+---
+import { getPublishedCollection } from "astro-course-university/content";
+import { withBase } from "astro-theme-university/url";
+
+/* Each lecture's body closes with a `> **Question to carry:** ...`
+   blockquote (see src/pages/lectures/[slug].astro for how it renders on the
+   lecture page itself). Pulled from the raw markdown body here rather than
+   duplicated into frontmatter, so there is exactly one place a question
+   lives. */
+function extractQuestion(body?: string): string | null {
+  if (!body) return null;
+  const collected: string[] = [];
+  let capturing = false;
+  for (const line of body.split("\n")) {
+    const trimmed = line.trim();
+    if (trimmed.startsWith(">")) {
+      const content = trimmed.replace(/^>\s?/, "");
+      if (!capturing && /^\*\*Question to carry:\*\*/.test(content)) {
+        capturing = true;
+      }
+      if (capturing) collected.push(content);
+    } else if (capturing) {
+      break;
+    }
+  }
+  if (!collected.length) return null;
+  return collected
+    .join(" ")
+    .replace(/^\*\*Question to carry:\*\*\s*/, "")
+    .trim();
+}
+
+const lectures = await getPublishedCollection("lectures");
+const questions = lectures
+  .map((lecture) => ({
+    week: lecture.data.week,
+    id: lecture.id,
+    question: extractQuestion(lecture.body),
+  }))
+  .filter((entry): entry is { week: number; id: string; question: string } => Boolean(entry.question))
+  .sort((a, b) => a.week - b.week);
+---
+
+<div class="lecture-questions">
+  <p class="ledger">Twelve weeks, twelve closing questions — read in order, the throughline.</p>
+  <ol class="questions-list">
+    {
+      questions.map(({ week, id, question }) => (
+        <li>
+          <a href={withBase(`/lectures/${id}/`)}>
+            <span class="week-stub">{week}</span>
+            <span class="question-mark" aria-hidden="true">
+              ?
+            </span>
+            <span class="question-text">{question}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ol>
+</div>
+
+<style>
+  .lecture-questions {
+    margin-block: var(--at-spacing-lg) var(--at-spacing-xl);
+  }
+
+  .questions-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-block-start: 1px solid var(--at-border);
+  }
+
+  .questions-list li {
+    border-block-end: 1px solid var(--at-border);
+  }
+
+  .questions-list a {
+    display: flex;
+    align-items: center;
+    gap: var(--at-spacing-md);
+    padding: var(--at-spacing-sm) var(--at-spacing-xs);
+    color: var(--at-text);
+    text-decoration: none;
+    transition: background 0.15s ease;
+  }
+
+  .questions-list a:hover,
+  .questions-list a:focus-visible {
+    background: var(--paper-bg);
+  }
+
+  .questions-list .week-stub {
+    flex-shrink: 0;
+    color: var(--at-text-secondary);
+  }
+
+  .question-mark {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--at-heading);
+    color: var(--at-on-primary);
+    font-family: var(--at-font-body);
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  .question-text {
+    font-weight: 600;
+  }
+</style>
