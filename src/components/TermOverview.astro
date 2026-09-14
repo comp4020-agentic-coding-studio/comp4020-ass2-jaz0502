@@ -1,0 +1,97 @@
+---
+import { getPublishedCollection } from "astro-course-university/content";
+
+const sessions = await getPublishedCollection("sessions");
+const lectures = await getPublishedCollection("lectures");
+const assessments = await getPublishedCollection("assessments");
+
+const weeks = Array.from({ length: 12 }, (_, i) => i + 1).map((week) => ({
+  week,
+  hasSession: sessions.some((entry) => entry.data.week === week),
+  hasLecture: lectures.some((entry) => entry.data.week === week),
+  due: assessments.find((entry) => entry.data.week === week),
+}));
+---
+
+<div class="term-overview">
+  <table>
+    <caption class="ledger">
+      Twelve teaching weeks — a lecture and a session run every week, three
+      weeks also carry an assessment due date.
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">Week</th>
+        {
+          weeks.map(({ week }) => (
+            <th scope="col">{String(week).padStart(2, "0")}</th>
+          ))
+        }
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Lecture</th>
+        {weeks.map(({ hasLecture }) => <td aria-label={hasLecture ? "Runs" : "—"}>{hasLecture ? "●" : "—"}</td>)}
+      </tr>
+      <tr>
+        <th scope="row">Session</th>
+        {weeks.map(({ hasSession }) => <td aria-label={hasSession ? "Runs" : "—"}>{hasSession ? "●" : "—"}</td>)}
+      </tr>
+      <tr>
+        <th scope="row">Due</th>
+        {
+          weeks.map(({ due }) => (
+            <td aria-label={due ? `${due.data.weight}% due` : "Nothing due"}>
+              {due ? `${due.data.weight}%` : "—"}
+            </td>
+          ))
+        }
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<style>
+  .term-overview {
+    overflow-x: auto;
+    margin-block: var(--at-spacing-lg) var(--at-spacing-xl);
+  }
+
+  table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--ledger-font);
+    font-size: var(--at-font-size-xs);
+    font-variant-numeric: tabular-nums;
+  }
+
+  caption {
+    caption-side: top;
+    text-align: left;
+    margin-block-end: var(--at-spacing-sm);
+  }
+
+  th,
+  td {
+    padding: 0.3em 0.15em;
+    text-align: center;
+    border: 1px solid var(--at-border);
+  }
+
+  thead th:first-child,
+  tbody th {
+    width: 5.5em;
+    white-space: nowrap;
+    text-align: left;
+    color: var(--at-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  tbody td {
+    font-variant-numeric: tabular-nums;
+    color: var(--at-text);
+  }
+</style>
