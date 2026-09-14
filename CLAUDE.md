@@ -12,13 +12,18 @@ profits from each one's worst behaviour, every week, all semester.
 
 1. Every session or lecture names one specific real machine, not a category
    of machine. Judgement call — not tested.
-2. At least one session or lecture per fortnight carries `tags: [incentive]`.
+2. A lecture makes an argument; a session investigates it with the class.
+   The lecture states an incentive claim about that week's machine and
+   defends it — the session is fieldwork, a teardown or a studio done
+   together, as a tutorial would be, never a solo exercise and never a
+   restatement of the lecture. Judgement call — not tested.
+3. At least one session or lecture per fortnight carries `tags: [incentive]`.
    Checked by `spec/incentive-check.test.ts`.
-3. At least 10 nodes carry that tag across the semester. Same file.
-4. Sessions and lectures both use `week-01.md`…`week-12.md` filenames, so the
+4. At least 10 nodes carry that tag across the semester. Same file.
+5. Sessions and lectures both use `week-01.md`…`week-12.md` filenames, so the
    two collections stay easy to walk in parallel.
-5. Assessment weights sum to exactly 100. Checked by `spec/course-spec.test.ts`.
-6. Every dated node stays inside `startDate`–`endDate`. Checked by
+6. Assessment weights sum to exactly 100. Checked by `spec/course-spec.test.ts`.
+7. Every dated node stays inside `startDate`–`endDate`. Checked by
    `spec/data-integrity.test.ts`.
 
 ## Left out on purpose
