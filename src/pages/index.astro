@@ -3,6 +3,7 @@ import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import { withBase } from "astro-theme-university/url";
+import Receipt from "../components/Receipt.astro";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
 ---
@@ -66,6 +67,16 @@ import { sessionLabels, siteConfig } from "../site-config";
       <p>Who teaches the course and how to reach them.</p>
     </Card>
   </CardGrid>
+
+  <Receipt>
+    <p>
+      This page is a one-shot interface too: three colours, a fixed layout,
+      and a handful of decisions about what to put in front of you and what
+      to leave in small print. If you can tell where that was done on
+      purpose, you can probably tell it on the machines this course actually
+      studies.
+    </p>
+  </Receipt>
 </ContentLayout>
 
 <style>
@@ -81,8 +92,11 @@ import { sessionLabels, siteConfig } from "../site-config";
   .course-tags li {
     padding: 0.25rem 0.65rem;
     border-radius: 999px;
+    font-family: var(--ledger-font);
+    font-size: var(--at-font-size-xs);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
     color: var(--at-text-secondary);
     background: var(--at-bg-alt);
-    font-size: 0.9rem;
   }
 </style>
