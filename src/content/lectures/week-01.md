@@ -24,3 +24,22 @@ related:
 - the question every week returns to: who benefits when this fails?
 - what to bring to Assignment 1: a single transaction, described before it's
   diagnosed
+
+## The argument
+
+Every course on interface design starts from the same complaint: bad
+interfaces are common, and could be avoidably better. This course starts
+somewhere else. A parking meter, a check-in kiosk and an ATM are not badly
+designed by accident — they are built for a moment when the person standing
+at them cannot walk away, cannot ask a follow-up question, and will not use
+the machine again soon enough to build up a mental model of it.
+
+Treating that as a fact about the situation, rather than a flaw in the
+interface, changes what counts as evidence: not "this was confusing" but
+"someone decided this could stay confusing, and it kept working for them."
+That's the claim this course tests, one machine a week, for twelve weeks —
+starting with the field notes you bring back from a parking meter, before
+you're given permission to diagnose anything.
+
+**Question to carry:** if nobody ever complains about a bad interface
+twice, who does that protect?
