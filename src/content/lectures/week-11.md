@@ -39,5 +39,5 @@ The harder question this week asks is whether "worse for the user" and
 "more profitable for the operator" are actually two separate claims here,
 or the same fact stated from two different seats.
 
-**Question to carry:** if the operator redesigned this machine purely for
-their own benefit, would anything about it actually change?
+> **Question to carry:** if the operator redesigned this machine purely for
+> their own benefit, would anything about it actually change?

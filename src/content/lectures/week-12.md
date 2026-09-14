@@ -44,6 +44,6 @@ machine, it's produced one no operator would keep running, which helps
 nobody either. The harder work is keeping the legitimate constraint while
 removing the one that was never legitimate to begin with.
 
-**Question to carry:** of everything your own redesign removes, what's the
-one thing you deliberately chose to leave in — and could you defend it to
-the person it protects?
+> **Question to carry:** of everything your own redesign removes, what's the
+> one thing you deliberately chose to leave in — and could you defend it to
+> the person it protects?

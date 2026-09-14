@@ -37,5 +37,5 @@ away from where everyone else enters isn't really offering an
 alternative; it's offering a technicality that satisfies an audit without
 satisfying the person standing at the machine.
 
-**Question to carry:** whose body and situation did the "default" path get
-built around, and who decided that was reasonable?
+> **Question to carry:** whose body and situation did the "default" path get
+> built around, and who decided that was reasonable?

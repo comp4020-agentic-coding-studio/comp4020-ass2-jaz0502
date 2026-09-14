@@ -44,5 +44,5 @@ doesn't make it fair — it just moves the argument from "was this hidden"
 to "was this reasonable," which is a much harder case to make from the
 other side of the counter.
 
-**Question to carry:** if disclosure alone made a fee fair, would banks
-still need surcharge-free networks as something to advertise?
+> **Question to carry:** if disclosure alone made a fee fair, would banks
+> still need surcharge-free networks as something to advertise?

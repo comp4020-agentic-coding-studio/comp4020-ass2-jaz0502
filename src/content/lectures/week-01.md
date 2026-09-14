@@ -41,5 +41,5 @@ That's the claim this course tests, one machine a week, for twelve weeks —
 starting with the field notes you bring back from a parking meter, before
 you're given permission to diagnose anything.
 
-**Question to carry:** if nobody ever complains about a bad interface
-twice, who does that protect?
+> **Question to carry:** if nobody ever complains about a bad interface
+> twice, who does that protect?

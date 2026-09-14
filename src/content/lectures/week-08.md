@@ -39,5 +39,5 @@ don't return to the shopper doing the extra work; they're captured
 entirely by the operator, and the shopper's only compensation is the time
 a human cashier would have saved them.
 
-**Question to carry:** if self-checkout is a convenience, why does it need
-cameras pointed at the person supposedly being helped?
+> **Question to carry:** if self-checkout is a convenience, why does it need
+> cameras pointed at the person supposedly being helped?

@@ -47,5 +47,5 @@ trip. "Dynamic pricing" sounds like a feature. From the driver's seat,
 it's a bill you can't predict, arriving after the decision it should have
 informed.
 
-**Question to carry:** if you can't find out the price until after you've
-paid it, in what sense did you agree to it?
+> **Question to carry:** if you can't find out the price until after you've
+> paid it, in what sense did you agree to it?

@@ -37,5 +37,5 @@ This week treats the price sticker as evidence. What does it tell you
 about who set the price, who bears the consequences of an error, and what
 the machine expects you to accept without explanation?
 
-**Question to carry:** when does simplicity stop being convenience and
-become concealment?
+> **Question to carry:** when does simplicity stop being convenience and
+> become concealment?

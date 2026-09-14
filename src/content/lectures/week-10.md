@@ -37,6 +37,6 @@ unresolved standards war being charged directly to the driver, one
 download and one account at a time, instead of being absorbed by the
 operators who left it unresolved.
 
-**Question to carry:** if two operators can't agree on a standard, why is
-the incompatibility always priced into the driver's bill rather than the
-operators' margins?
+> **Question to carry:** if two operators can't agree on a standard, why is
+> the incompatibility always priced into the driver's bill rather than the
+> operators' margins?

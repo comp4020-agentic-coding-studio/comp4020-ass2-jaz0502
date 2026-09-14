@@ -36,5 +36,5 @@ that somebody is now several layers removed from the passenger standing at
 the gate. The escalation path still exists; it's just rarely where the
 kiosk points first, and that placement is a choice.
 
-**Question to carry:** when a machine tells you "no" with no explanation,
-who used to have to give you one?
+> **Question to carry:** when a machine tells you "no" with no explanation,
+> who used to have to give you one?

@@ -38,6 +38,6 @@ hospital actually looks at. A form that's merely inconvenient for most
 people can be genuinely unsafe for the person it wasn't built with in
 mind.
 
-**Question to carry:** if a kiosk were designed against the worst day
-someone could be having, rather than an average one, what would it ask
-first instead?
+> **Question to carry:** if a kiosk were designed against the worst day
+> someone could be having, rather than an average one, what would it ask
+> first instead?

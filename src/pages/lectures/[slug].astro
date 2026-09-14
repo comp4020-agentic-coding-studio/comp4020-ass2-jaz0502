@@ -37,7 +37,9 @@ const title = `Week ${lecture.data.week}: ${lecture.data.title}`;
       </a>
     )
   }
-  <Content />
+  <div class="lecture-body">
+    <Content />
+  </div>
   <TeachingTeam teachers={lecture.data.teachers} />
   <RelatedContent entry={lecture} collections={graphCollections} />
 </ContentLayout>
@@ -79,5 +81,45 @@ const title = `Week ${lecture.data.week}: ${lecture.data.title}`;
     display: flex;
     flex-direction: column;
     gap: 0.15rem;
+  }
+
+  /* Question to carry: the one thing a lecture leaves you with, boxed and
+     marked with a question-mark bubble rather than styled as a quotation.
+     Overrides the theme's default blockquote (a quiet dash-accent style
+     tuned for genuine quotations, not this page's own closing claim). */
+  .lecture-body :global(blockquote) {
+    display: flex;
+    align-items: center;
+    gap: var(--at-spacing-md);
+    margin-block: var(--at-spacing-xl) 0;
+    padding: var(--at-spacing-md) var(--at-spacing-lg);
+    border: 1px solid var(--at-border);
+    border-radius: var(--at-border-radius);
+    background: var(--paper-bg);
+    box-shadow: var(--at-shadow-sm);
+    font-size: var(--at-font-size-h4);
+    font-weight: 700;
+    color: var(--at-heading);
+  }
+
+  .lecture-body :global(blockquote p) {
+    margin: 0;
+  }
+
+  .lecture-body :global(blockquote::before) {
+    content: "?";
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    border: none;
+    border-radius: 50%;
+    background: var(--at-heading);
+    color: var(--at-on-primary);
+    font-family: var(--at-font-body);
+    font-size: 1rem;
+    font-weight: 700;
+    padding-block-end: 0;
   }
 </style>

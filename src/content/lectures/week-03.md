@@ -33,5 +33,5 @@ they didn't need, in the seconds before they'd otherwise have caught the
 mistake. A queue you only imagine still changes what you choose, whether
 or not anyone is actually standing behind you.
 
-**Question to carry:** if removing the time pressure wouldn't cost the
-machine a single sale, what is it actually for?
+> **Question to carry:** if removing the time pressure wouldn't cost the
+> machine a single sale, what is it actually for?
