@@ -37,11 +37,5 @@ This week treats the price sticker as evidence. What does it tell you
 about who set the price, who bears the consequences of an error, and what
 the machine expects you to accept without explanation?
 
-<div class="exhibit">
-  <span class="exhibit-label">Exhibit 02</span>
-  <span class="exhibit-item">Price sticker</span>
-  <span class="exhibit-value">$3.50</span>
-</div>
-
 > **Question to carry:** when does simplicity stop being convenience and
 > become concealment?
