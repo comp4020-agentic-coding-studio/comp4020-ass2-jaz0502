@@ -12,6 +12,7 @@ import { sessionLabels, siteConfig } from "../site-config";
 <ContentLayout
   title={`${courseMeta.code}: ${courseMeta.title}`}
   description={courseMeta.description}
+  mainAttrs={{ class: "home-main" }}
   {...siteConfig}
 >
   <ul class="course-tags" aria-label="Course tags">
@@ -82,6 +83,65 @@ import { sessionLabels, siteConfig } from "../site-config";
 </ContentLayout>
 
 <style>
+  /* Homepage title as a physical readout: a parking-meter/ATM screen behind
+     the h1, not a photo of one. `.home-main` comes from `mainAttrs` on
+     ContentLayout so this stays scoped to the homepage's title only — the
+     h1 itself lives outside this file's template (rendered by
+     ContentLayout), so Astro's usual scoped-CSS hashing can't reach it. */
+  :global(.home-main > h1) {
+    /* The screen's dark panel lives on ::before, breaking out to the full
+       viewport width — see there for why. The h1 box itself stays on
+       .at-main's own span (inset-start/content-end) purely so its padding
+       box is the coordinate system that ::before centres against, and so
+       the text keeps the same left edge as the paragraphs below it
+       (content-start, one content-inset to the right of the gold rule). */
+    position: relative;
+    isolation: isolate;
+    grid-column: inset-start / content-end;
+    margin-block: 0 var(--at-spacing-xl);
+    padding-block: calc(var(--at-spacing-2xl) * 2);
+    padding-inline: var(--at-content-inset) 0;
+    font-family: var(--ledger-font);
+    font-size: var(--at-font-size-h3);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #7cffb0;
+    text-shadow:
+      0 0 2px rgba(124, 255, 176, 0.9),
+      0 0 10px rgba(124, 255, 176, 0.5),
+      0 0 24px rgba(124, 255, 176, 0.25);
+  }
+
+  /* The dark screen panel: sized to the h1's own box height, but centred
+     against .at-main's span (h1's containing block, itself centred between
+     two equal flexible gutters) at full viewport width — the classic
+     centred-container breakout, done on the background layer instead of
+     the text so the words can stay aligned with the rest of the page. */
+  :global(.home-main > h1)::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset-block: 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    background:
+      repeating-linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.03) 0px,
+        rgba(255, 255, 255, 0.03) 1px,
+        transparent 1px,
+        transparent 3px
+      ),
+      #0a0f0c;
+    border: 1px solid #1e2b23;
+    border-radius: calc(var(--at-border-radius) / 2);
+    box-shadow:
+      inset 0 0 16px rgba(0, 0, 0, 0.6),
+      var(--at-shadow-sm);
+  }
+
   .course-tags {
     display: flex;
     flex-wrap: wrap;
