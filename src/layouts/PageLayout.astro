@@ -3,6 +3,9 @@ import MdxPageLayout from "astro-theme-university/layouts/MdxPageLayout.astro";
 import { siteConfig } from "../site-config";
 ---
 
-<MdxPageLayout siteConfig={siteConfig} {...Astro.props}>
+{/* lead={false}: each page writes its own <h1> followed by the lead
+    paragraph, so the description reads underneath the title instead of
+    above it. */}
+<MdxPageLayout siteConfig={siteConfig} {...Astro.props} lead={false}>
   <slot />
 </MdxPageLayout>
