@@ -13,13 +13,13 @@ spec:
   - you can point to one item that would change what the kiosk asks first
 ---
 
-## Before the session
+## Before the tutorial
 
-A short de-identified case is provided in the session; no preparation needed
+A short de-identified case is provided in the tutorial; no preparation needed
 beyond having thought about a time you or someone you know dealt with a form
 or terminal while unwell.
 
-## In the session
+## In the tutorial
 
 Working in groups from the provided case, we build a duress-accessibility
 checklist: concrete, checkable items rather than general good-design

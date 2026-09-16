@@ -13,14 +13,14 @@ spec:
   - you can point to the exact moment you weren't sure what to do next
 ---
 
-## Before the session
+## Before the tutorial
 
 Use a parking meter — or, if none is nearby, the closest one-shot payment
 machine you can find — and write down what happened. Not what you'd change.
 What happened, in the order it happened, including the part where you
 weren't sure what to do.
 
-## In the session
+## In the tutorial
 
 We compare notes across the room before anyone is allowed to use the word
 "design." The point is to notice how much of a transaction is invisible

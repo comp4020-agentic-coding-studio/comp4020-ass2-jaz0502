@@ -13,12 +13,12 @@ spec:
   - you note how far the accessible alternative is from the default path, in steps or metres
 ---
 
-## Before the session
+## Before the tutorial
 
 Find a fare gate you use or pass regularly, and locate its accessible
 alternative — a wider gate, a staffed counter, an intercom.
 
-## In the session
+## In the tutorial
 
 We map, gate by gate, how far the "alternative" path actually is from the
 default one, and for whom the default was never really designed.

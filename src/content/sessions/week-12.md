@@ -17,12 +17,12 @@ related:
   - assessments/final-project
 ---
 
-## Before the session
+## Before the tutorial
 
 Bring a draft of your teardown and redesign, and be ready to defend the one
 incentive you deliberately chose not to design away.
 
-## In the session
+## In the tutorial
 
 Same courtroom shape as week 7's studio: five minutes to state the
 redesign and its weakest defence, then two minutes of questions aimed

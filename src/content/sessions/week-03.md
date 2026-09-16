@@ -13,12 +13,12 @@ spec:
   - you can distinguish a queue that existed from a queue you only imagined
 ---
 
-## Before the session
+## Before the tutorial
 
 Find a train, bus or parking ticket machine somewhere you'd normally use one
 anyway — this is fieldwork, not a special trip.
 
-## In the session
+## In the tutorial
 
 Bring your timed transaction and the moment urgency changed your decision.
 We build a shared vocabulary for the design elements that manufacture time

@@ -17,12 +17,12 @@ related:
   - assessments/assignment-2
 ---
 
-## Before the session
+## Before the tutorial
 
 Bring your Assignment 2 claim — who benefits, and the strongest piece of
 evidence you have for it — even if the write-up isn't finished.
 
-## In the session
+## In the tutorial
 
 We run this as a courtroom rather than a critique: three minutes to state
 the claim and its evidence, then two minutes of cross-examination from one

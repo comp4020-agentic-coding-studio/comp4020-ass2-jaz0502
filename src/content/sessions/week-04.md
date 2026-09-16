@@ -15,12 +15,12 @@ related:
   - assessments/assignment-1
 ---
 
-## Before the session
+## Before the tutorial
 
 Bring a draft of your Assignment 1 walkthrough, even an unfinished one, and
 the single decision point in it you're least confident about.
 
-## In the session
+## In the tutorial
 
 Showings run in pairs: two minutes to walk your partner through the
 transaction as it happened, three minutes of feedback aimed only at the

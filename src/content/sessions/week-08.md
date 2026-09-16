@@ -13,12 +13,12 @@ spec:
   - you estimate how much of your own time the machine's checks used
 ---
 
-## Before the session
+## Before the tutorial
 
 Do a self-checkout shop (or recall a recent one in detail) and log every
 "unexpected item," weight-check or camera prompt you encounter.
 
-## In the session
+## In the tutorial
 
 We tally the logs across the room and separate genuinely helpful prompts
 from ones whose only function is loss prevention shifted onto the shopper's

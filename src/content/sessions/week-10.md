@@ -12,12 +12,12 @@ spec:
   - you can say which network's friction more clearly benefits that network
 ---
 
-## Before the session
+## Before the tutorial
 
 Find two EV charging kiosks from different operators — in person if you
 can, otherwise from documentation, reviews and photos.
 
-## In the session
+## In the tutorial
 
 We compare notes across pairs of machines rather than single ones this
 week, which makes it easier to see which friction is universal to the

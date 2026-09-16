@@ -13,12 +13,12 @@ spec:
   - you can say who has the authority the kiosk doesn't
 ---
 
-## Before the session
+## Before the tutorial
 
 Find a news report, forum post or your own experience of an airport
 self-check-in kiosk refusing someone or failing partway through.
 
-## In the session
+## In the tutorial
 
 We work through several cases together, tracing exactly what the kiosk's
 error message told the person to do, and who they had to find in the

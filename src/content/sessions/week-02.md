@@ -13,12 +13,12 @@ spec:
   - you can name the smallest point where the machine could have told you more and didn't
 ---
 
-## Before the session
+## Before the tutorial
 
 Nothing to prepare — this week's machine is provided in the room, or you use
 your phone to pull up a photo of one you've used.
 
-## In the session
+## In the tutorial
 
 Groups teardown a vending-machine transaction into its individual decision
 points: read the options, choose, pay, wait, retrieve, recover from a jam.

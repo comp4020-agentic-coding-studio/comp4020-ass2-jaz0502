@@ -15,12 +15,12 @@ spec:
   - you identify the exact point exact change or a specific app is required, and why
 ---
 
-## Before the session
+## Before the tutorial
 
 No fieldwork required this week — the case is confronting enough that it's
 handled as a shared discussion rather than individual assignment.
 
-## In the session
+## In the tutorial
 
 We work through pay-toilet and turnstile kiosks as the starkest version of
 this course's whole argument: no alternative, real time pressure, real

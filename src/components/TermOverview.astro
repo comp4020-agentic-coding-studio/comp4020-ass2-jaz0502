@@ -1,5 +1,6 @@
 ---
 import { getPublishedCollection } from "astro-course-university/content";
+import { sessionLabels } from "../site-config";
 
 const sessions = await getPublishedCollection("sessions");
 const lectures = await getPublishedCollection("lectures");
@@ -16,7 +17,7 @@ const weeks = Array.from({ length: 12 }, (_, i) => i + 1).map((week) => ({
 <div class="term-overview">
   <table>
     <caption class="ledger">
-      Twelve teaching weeks — a lecture and a session run every week, three
+      Twelve teaching weeks — a lecture and a tutorial run every week, three
       weeks also carry an assessment due date.
     </caption>
     <thead>
@@ -35,7 +36,7 @@ const weeks = Array.from({ length: 12 }, (_, i) => i + 1).map((week) => ({
         {weeks.map(({ hasLecture }) => <td aria-label={hasLecture ? "Runs" : "—"}>{hasLecture ? "●" : "—"}</td>)}
       </tr>
       <tr>
-        <th scope="row">Session</th>
+        <th scope="row">{sessionLabels.singular}</th>
         {weeks.map(({ hasSession }) => <td aria-label={hasSession ? "Runs" : "—"}>{hasSession ? "●" : "—"}</td>)}
       </tr>
       <tr>
