@@ -1,53 +1,70 @@
 # Process overview
 
-<!-- TEMPLATE: this file is a shape to fill in, not a form. Replace everything
-     in it with your own overview, and delete this comment — `pnpm
-     check:evidence` will remind you if it's still here. -->
-
-Written by you, for a reader: how you got from the brief to the harness and
-agentic workflow behind this submission. Markers read this file and follow its
-citations; they don't trawl the repo for evidence you didn't point at.
-
-This file is the shape; the course site's
-[assessment page](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/topics/assessment/#what-you-submit)
-is the requirement, and its
-[word counts](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/topics/assessment/#word-counts)
-cover every deliverable.
-
 ## What I built
 
-One paragraph: the thing, and the idea behind it.
+A course website for SLOP4605, "One Shot, No Refunds: The Design of Captive
+Public Machines" — a fictional twelve-week course built on the
+`astro-theme-university` / `astro-course-university` template stack. Every
+week pairs a lecture and a tutorial around one specific real public machine
+(a named parking meter, vending machine, ticket machine, ATM, or airport
+kiosk) and asks who benefits when that machine's design is bad. Three
+assessments (weeks 4, 7, 12) build on each other — a field audit, an
+incentive case study, and a full teardown and redesign — and the site's own
+test suite checks the parts of the brief that reduce to rules: incentive-tag
+coverage, assessment weights summing to 100, and every dated node falling
+inside the semester's start and end dates.
 
 ## How I got here
 
-The account of the process: how the work actually went, and how you knew the
-result was right. Tell it in whatever order makes it clear. A weekly prototype
-needs a paragraph or two; an assignment needs more.
+I started by brainstorming both serious and satirical course ideas. An early
+direction, a course about how to design bad UX, felt too close to something a
+real university could already teach. UX and human-centred design are
+established fields, so a "bad design" course risked simply relabelling one of
+them. I narrowed the subject instead to one-shot, captive-user machines:
+interfaces a stranger encounters once, with little opportunity to practise,
+recover, or walk away. That narrowing, and the question it produced, became
+the thing every week had to answer about a different machine, rather than a
+theme repeated twelve times.
+[`59b1398`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-jaz0502/commit/59b1398)
 
-Cite the record as you go, as links whose text is the commit hash or range and
-whose target is this repo's commit or compare URL, so a reader clicks straight
-to the evidence:
+I then planned the course before asking the agent to generate the site
+content. The plan established the machine assigned to each week, the
+lecture/session relationship, the recurring question and the assessment
+progression.
+[`7bdce60`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-jaz0502/commit/7bdce60)
+This changed what I accepted from the agent. Content that named a machine but
+drifted into generic UX commentary was not sufficient, because specificity
+was one of the course's core attributes. The agent could generate and extend
+material, but it was working against a structure I had already decided on.
 
-- one commit: [`a1b2c3d`](https://github.com/YOUR-ORG/YOUR-REPO/commit/a1b2c3d)
-- a range:
-  [`a1b2c3d...e4f5a6b`](https://github.com/YOUR-ORG/YOUR-REPO/compare/a1b2c3d...e4f5a6b)
+I encoded some of these decisions into the harness and left others
+deliberately as judgement. Naming one real machine each week became a rule in
+CLAUDE.md, but not an automated test, since a test cannot meaningfully
+distinguish a specific, well-chosen example from a lazy one. The recurring
+incentive thread could be checked structurally, though:
+`spec/incentive-check.test.ts` requires at least ten incentive-tagged
+teaching nodes across the semester, with coverage at least once a fortnight.
+[`b91355b`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-jaz0502/commit/b91355b)
+Whether a given week's argument was actually insightful, or whether the tone
+held across twelve weeks, stayed outside the check and was left for critique.
 
-To pair a prompt with the commit it produced, quote the prompt (curated, not a
-full transcript) next to the citation:
+The visual design followed the same split. Restyling was optional, so I
+treated it as something to test and critique rather than a requirement to
+satisfy. An "exhibit" treatment for Week 2's price sticker initially seemed
+promising, but did not fit the wider tone and was removed.
+[`02af5fb`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-jaz0502/commit/02af5fb)/[`86e2fdf`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-jaz0502/commit/86e2fdf)
+What remained was the receipt-and-ledger system, because it became connected
+to the course itself rather than functioning as decoration. Receipt-like
+blocks and transaction-oriented typography reinforce the course's interest in
+evidence, transactions, and the information a stranger has to trust when
+using a machine.
+[`eebe163`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-jaz0502/commit/eebe163),
+[`43e3860`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-jaz0502/commit/43e3860)
 
-> the prompt, verbatim
-
-Screenshots are welcome where one carries the point better than a sentence does.
-Commit the file to this repo and link it with a **relative** path, which is what
-makes it render on GitHub: `![alt text](docs/before.png)`. Images don't count
-towards the word count and don't replace the citation.
-
-## Before you ship
-
-`pnpm check:evidence` verifies that this comment is gone, that your citations
-resolve to real commits, that a crit week's reflection entry is in
-`reflections/`, and that your `CLAUDE.md` is there. It checks that your account
-is traceable, not that it is good: that is the marker's call.
-
-Images aren't checked: unlike a citation whose SHA doesn't resolve, a broken
-image is visible the moment this file is rendered on GitHub.
+Across the project, I used the agent as a collaborator operating within
+constraints rather than as a generator of finished decisions. I decided what
+the course needed to be, established the structure before generation,
+encoded the parts that could be checked, and used critique for the parts
+that could not. The agent accelerated the production and iteration of the
+site, but decisions about specificity, argument, tone and visual treatment
+remained mine to accept, reject or revise.
