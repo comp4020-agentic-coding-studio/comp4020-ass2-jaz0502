@@ -18,6 +18,8 @@ the thing every week had to answer about a different machine, rather than a
 theme repeated twelve times.
 [`59b1398`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-jaz0502/commit/59b1398)
 
+The initial risk was that the course sounded like just Don Norman's principles of design - affordances, feedback, and mapping, pointed at different objects. The first version of week 1's deck gestured at the difference between my course and Norman's, but it was not specific. The breakthrough emerged from thinking about presenting the idea from a different angle: instead of dismissing his toolkit, engage with it first. I added a slide grounding Norman's real vocabulary against a bad parking meter - what does and does not get diagnosed if you actually run affordances, signifiers, feedback, and mapping against it. His principles explain why a design fails to communicate, but none of them ask who wrote the spec, and what that person needed the machine to do that had nothing to do with you. Earning the pivot by engaging with the existing framework first is what turned "not another UX course" from an instinct into the question the whole semester asks instead of his: not "is this discoverable," but "who profits when it isn't." [`65ad479`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-jaz0502/commit/65ad479)
+
 I then planned the course before asking the agent to generate the site
 content. The plan established the machine assigned to each week, the
 lecture/session relationship, the recurring question and the assessment
