@@ -2,17 +2,8 @@
 
 ## What I built
 
-A course website for SLOP4605, "One Shot, No Refunds: The Design of Captive
-Public Machines" — a fictional twelve-week course built on the
-`astro-theme-university` / `astro-course-university` template stack. Every
-week pairs a lecture and a tutorial around one specific real public machine
-(a named parking meter, vending machine, ticket machine, ATM, or airport
-kiosk) and asks who benefits when that machine's design is bad. Three
-assessments (weeks 4, 7, 12) build on each other — a field audit, an
-incentive case study, and a full teardown and redesign — and the site's own
-test suite checks the parts of the brief that reduce to rules: incentive-tag
-coverage, assessment weights summing to 100, and every dated node falling
-inside the semester's start and end dates.
+I built the course site for SLOP4605, “One Shot, No Refunds: The Design of Captive Public Machines”. The course spends twelve weeks examining public machines that give a stranger essentially one attempt to complete a transaction they cannot easily opt out of, including parking meters, vending machines, ticket machines, ATMs and airport kiosks. Although it draws on UX and human-centred design, I wanted it to be more specific than a general class about “bad design”. Its recurring question is: who benefits when the design is bad? Each week applies that question to a specific machine.
+
 
 ## How I got here
 
@@ -50,8 +41,7 @@ held across twelve weeks, stayed outside the check and was left for critique.
 
 The visual design followed the same split. Restyling was optional, so I
 treated it as something to test and critique rather than a requirement to
-satisfy. An "exhibit" treatment for Week 2's price sticker initially seemed
-promising, but did not fit the wider tone and was removed.
+satisfy. An "exhibit" label initially seemed promising, where a small label marked the physical object that week's argument turned on, but did not fit the wider tone and was removed.
 [`02af5fb`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-jaz0502/commit/02af5fb)/[`86e2fdf`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-jaz0502/commit/86e2fdf)
 What remained was the receipt-and-ledger system, because it became connected
 to the course itself rather than functioning as decoration. Receipt-like
@@ -60,11 +50,3 @@ evidence, transactions, and the information a stranger has to trust when
 using a machine.
 [`eebe163`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-jaz0502/commit/eebe163),
 [`43e3860`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-jaz0502/commit/43e3860)
-
-Across the project, I used the agent as a collaborator operating within
-constraints rather than as a generator of finished decisions. I decided what
-the course needed to be, established the structure before generation,
-encoded the parts that could be checked, and used critique for the parts
-that could not. The agent accelerated the production and iteration of the
-site, but decisions about specificity, argument, tone and visual treatment
-remained mine to accept, reject or revise.
