@@ -19,6 +19,7 @@ spec:
   - you name the party who benefits from the machine's worst behaviour
   - you support that claim with evidence, not just plausibility
   - you name the strongest counter-argument to your own claim
+  - the incentive map and the written case name the same machine, behaviour, and party
 related:
   - sessions/week-07
 ---
@@ -37,6 +38,18 @@ you can find one.
 
 ## What you submit
 
-A one-page incentive map (diagram or structured prose, your choice) plus a
-written case (600–900 words) that states the claim, the evidence for it, and
-the strongest argument against it that you could find.
+Two parts:
+
+1. **The incentive map** — one page, diagram or structured prose, your
+   choice of form. It names the machine, the worst behaviour, and the party
+   who benefits from it staying that way. A diagram labels every node and
+   arrow; structured prose is laid out so a reader can find claim, evidence,
+   and counter-argument at a glance.
+2. **The written case** (600–900 words) — states the claim, lays out the
+   evidence for it (a fee schedule, a maintenance pattern, a support policy,
+   a contract clause — something a reader could go check themselves), and
+   closes by naming the strongest argument against your own claim and why it
+   doesn't overturn it.
+
+The map and the case have to agree with each other: the map is not a
+decorative summary of an argument that only actually gets made in the prose.

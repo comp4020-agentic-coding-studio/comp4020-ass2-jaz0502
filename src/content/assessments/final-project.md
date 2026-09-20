@@ -18,6 +18,7 @@ spec:
   - the teardown is evidenced, not just asserted
   - the redesign names the legitimate incentive it deliberately keeps
   - the memo names who would resist the change, and why
+  - the dossier names its machine and transaction on its own, without relying on a verbal walkthrough
 related:
   - sessions/week-12
 ---
@@ -37,6 +38,20 @@ franchise holder — and says plainly why they'd push back.
 
 ## What you submit
 
-A dossier: the teardown, the redesign (sketches, flows, or a working
-prototype — your choice of fidelity), and the resistance memo (300–500 words).
-Say plainly what a reader needs to evaluate it without you in the room.
+A single dossier with three clearly labelled sections:
+
+1. **The teardown** — how the machine currently behaves and who that
+   behaviour serves, evidenced the way Assignment 2 asked you to evidence a
+   claim: not just asserted.
+2. **The redesign** — sketches, flows, or a working prototype, your choice
+   of fidelity. Whatever the fidelity, it has to be enough to show the
+   specific piece of friction being removed and the specific piece being
+   deliberately kept, and to name which legitimate constraint (fraud
+   prevention, throughput, liability) the kept piece serves.
+3. **The resistance memo** (300–500 words) — names who loses out from the
+   redesign and says plainly why they would push back.
+
+Assume your reader has this course's vocabulary but no memory of your
+machine: name it again here even if you already used it in Assignment 1 or
+2. Say plainly what a reader needs to evaluate the dossier without you in
+the room.
